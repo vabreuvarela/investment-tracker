@@ -1,4 +1,4 @@
-FROM node:22-lts as builder
+FROM node:24 AS builder
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM node:22-lts
+FROM node:24
 
 WORKDIR /app
 
