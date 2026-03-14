@@ -2,6 +2,9 @@ Project agent rules (AGENTS.md)
 
 1. Use full words only
    - Do not use shorthands such as "repo". Use "repository". Use full verbs and nouns everywhere in code, comments, routes, controllers, commit messages, and documentation.
+   - All nouns in file names and class/interface names must be singular (e.g., UserController, InvestmentRepository, not UsersController, InvestmentsRepository).
+   - Directory names must be plural (e.g., src/controllers/, src/repositories/, src/routes/).
+   - Examples: user.ts (not users.ts), investment.ts (not investments.ts), InvestmentController (not InvestmentsController).
 
 2. Tool-calling and intent reporting
    - Always call report_intent on the first tool-calling turn after a user message.

@@ -1,8 +1,8 @@
 import express, { Express } from 'express';
 import indexRoutes from './routes/index';
 import authRoutes from './routes/auth';
-import userRoutes from './routes/users';
-import investmentsRoutes from './routes/investments';
+import userRoutes from './routes/user';
+import investmentsRoutes from './routes/investment';
 import { errorHandler } from './middleware/errorHandler';
 
 const app: Express = express();

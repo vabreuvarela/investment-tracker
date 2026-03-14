@@ -1,11 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
-import { InvestmentsRepository } from '../repositories/InvestmentsRepository';
+import { InvestmentRepository } from '../repositories/InvestmentRepository';
 
 export class InvestmentController {
-  private repo: InvestmentsRepository;
+  private repo: InvestmentRepository;
 
-  constructor(repo?: InvestmentsRepository) {
-    this.repo = repo || new InvestmentsRepository();
+  constructor(repo?: InvestmentRepository) {
+    this.repo = repo || new InvestmentRepository();
   }
 
   async list(req: Request, res: Response, next: NextFunction): Promise<void> {

@@ -7,7 +7,7 @@ export interface Investment {
   investment_uuid: string;
 }
 
-export class InvestmentsRepository {
+export class InvestmentRepository {
   async findByUserId(userId: string): Promise<Investment[]> {
     const db = await getDb();
     const collection = db.collection<Investment>('investments');
