@@ -9,7 +9,9 @@
     "build": "tsc",
     "dev": "ts-node src/server.ts",
     "migrate": "ts-node src/database/migrations/migrate.ts",
-    "migrate:down": "ts-node src/database/migrations/migrate.ts rollback"
+    "migrate:down": "ts-node src/database/migrations/migrate.ts rollback",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
@@ -20,18 +22,23 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "kysely": "^0.28.11",
-    "mongodb": "^5.7ma.0",
+    "mongodb": "^5.7.0",
     "pg": "^8.20.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/bcrypt": "^6.0.0",
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.4.0",
     "@types/pg": "^8.18.0",
     "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
     "dotenv": "^17.3.1",
+    "eslint": "^10.0.3",
+    "husky": "^9.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

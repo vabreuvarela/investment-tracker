@@ -1,4 +1,4 @@
-.PHONY: help setup build build-docker start stop logs clean install dev migrate migrate-down postman
+.PHONY: help setup build build-docker start stop logs clean install dev migrate migrate-down lint postman
 
 # Variables
 PROJECT_NAME := investment-tracker
@@ -19,7 +19,9 @@ help:
 	@echo "  make ps             - Show running services"
 	@echo "  make migrate        - Run database migrations"
 	@echo "  make migrate-down   - Rollback database migrations"
-	@echo "  make postman        - Generate Postman collection from Express routes"
+	@echo "  make lint           - Run ESLint on the project"
+	@echo "  make lint:fix       - Run ESLint and fix issues automatically"
+	@echo "  make postman        - Display Postman collection information"
 	@echo "  make clean          - Stop services and remove containers"
 	@echo "  make clean-all      - Stop services, remove containers and volumes"
 	@echo "  make install        - Install npm dependencies"
@@ -108,6 +110,15 @@ migrate-down:
 test:
 	@echo "Running tests..."
 	npm test
+
+# Linting
+lint:
+	@echo "Running ESLint..."
+	npm run lint
+
+lint-fix:
+	@echo "Running ESLint with --fix..."
+	npm run lint:fix
 
 # Documentation
 postman:
