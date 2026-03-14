@@ -17,7 +17,11 @@ Project agent rules (AGENTS.md)
    - Stage changes explicitly (git add) and use git rm for deletions.
 
 5. Dependencies and builds
-   - When adding or updating dependencies, update package.json and run the package manager (npm install) and then run the build script when appropriate.
+   - When adding or updating dependencies, install with npm (not globally).
+   - Always use --save-dev for development tools; use --save for production dependencies.
+   - Update package.json via npm install, never manually edit it for dependencies.
+   - Run the build script when appropriate after installing dependencies.
+   - Never install packages globally (-g flag) — they must be installed locally via npm so they're reproducible across environments.
 
 6. Security and secrets
    - Never commit secrets, credentials, or environment variables to source control.
