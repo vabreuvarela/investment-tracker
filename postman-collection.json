@@ -1,0 +1,748 @@
+{
+  "item": [
+    {
+      "id": "2af4fb37-b8ab-45a6-ab90-dc5b694074d7",
+      "name": "Authentication",
+      "item": [
+        {
+          "id": "4291efda-49ea-4e01-b8c2-7d8af956e999",
+          "name": "Register a new user",
+          "request": {
+            "name": "Register a new user",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "auth",
+                "register"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"SecurePassword123\"\n}"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "80fec4b9-b2ff-4d70-8435-ef2295984a33",
+          "name": "Login user",
+          "request": {
+            "name": "Login user",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "auth",
+                "login"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"SecurePassword123\"\n}"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "5f8b5ee9-258f-4a91-851d-449f280841cb",
+          "name": "Logout user",
+          "request": {
+            "name": "Logout user",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "auth",
+                "logout"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {}
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "b9d3981c-4f00-4138-9f51-95b0674ca764",
+          "name": "Refresh authentication token",
+          "request": {
+            "name": "Refresh authentication token",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "auth",
+                "refresh"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "POST",
+            "body": {}
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "35d7cbee-5bc8-47c2-b2af-4e7765306e72",
+      "name": "Users",
+      "item": [
+        {
+          "id": "31e2a928-395c-4062-819e-ffe143c0f030",
+          "name": "Update user profile",
+          "request": {
+            "name": "Update user profile",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "users",
+                ":userId"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"newemail@example.com\",\n  \"password\": \"NewSecurePassword123\"\n}"
+            }
+          },
+          "response": [],
+          "event": []
+        },
+        {
+          "id": "9ede9d5b-deb7-426b-8e3b-fb09ff645c06",
+          "name": "Delete user account",
+          "request": {
+            "name": "Delete user account",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "users",
+                ":userId"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "DELETE",
+            "body": {}
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "90b860eb-c002-4148-9046-a5074c081f31",
+      "name": "Investments",
+      "item": [
+        {
+          "id": "84d2bfb3-e3f6-4bf7-813b-7e3182ac6567",
+          "name": "Get user investments",
+          "request": {
+            "name": "Get user investments",
+            "url": {
+              "protocol": "{{protocol}}",
+              "path": [
+                "investments",
+                ":userId"
+              ],
+              "host": [
+                "{{host}}"
+              ],
+              "query": [
+                {
+                  "key": "members",
+                  "value": [
+                    {
+                      "key": "members",
+                      "value": []
+                    },
+                    {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "key": "reference",
+                  "value": {
+                    "members": {
+                      "key": "members",
+                      "value": []
+                    },
+                    "reference": {
+                      "key": "reference",
+                      "value": {}
+                    },
+                    "Type": {
+                      "key": "Type",
+                      "value": {
+                        "_postman_propertyName": "QueryParam",
+                        "_postman_propertyIndexKey": "key",
+                        "_postman_propertyAllowsMultipleValues": true
+                      }
+                    },
+                    "_postman_listIndexKey": {
+                      "key": "_postman_listIndexKey",
+                      "value": "key"
+                    },
+                    "_postman_listAllowsMultipleValues": {
+                      "key": "_postman_listAllowsMultipleValues",
+                      "value": true
+                    }
+                  }
+                },
+                {
+                  "key": "Type",
+                  "value": {
+                    "_postman_propertyName": "QueryParam",
+                    "_postman_propertyIndexKey": "key",
+                    "_postman_propertyAllowsMultipleValues": true
+                  }
+                },
+                {
+                  "key": "_postman_listIndexKey",
+                  "value": "key"
+                },
+                {
+                  "key": "_postman_listAllowsMultipleValues",
+                  "value": true
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "response": [],
+          "event": []
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "any",
+      "value": "http",
+      "key": "protocol"
+    },
+    {
+      "type": "any",
+      "value": "localhost:3000",
+      "key": "host"
+    },
+    {
+      "type": "any",
+      "value": "",
+      "key": "token"
+    },
+    {
+      "type": "any",
+      "value": "",
+      "key": "userId"
+    }
+  ],
+  "info": {
+    "_postman_id": "3582d104-9ff7-4fa2-bc85-c09660211336",
+    "name": "Investment Tracker API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}

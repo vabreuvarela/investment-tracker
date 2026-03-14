@@ -45,4 +45,10 @@ Project agent rules (AGENTS.md)
 11. Error handling
    - If making changes that affect runtime (package.json, docker-compose), validate by running the relevant build or start command and fix issues before finishing.
 
+13. Endpoint documentation
+   - Document all new endpoints in src/documentation/endpoints.ts using the EndpointDocumentation interface.
+   - Each endpoint must include: method, path, summary, description, tags, authentication/authorization, requestBody/parameters with examples, and responses with status codes.
+   - This documentation is used to automatically generate Postman collections via postmanGenerator.ts.
+   - Maintain endpoint documentation whenever routes are added or modified.
+
 If any rule here conflicts with a direct user instruction, follow the user's instruction but ask for clarification when necessary.

@@ -1,4 +1,4 @@
-.PHONY: help setup build build-docker start stop logs clean install dev migrate migrate-down
+.PHONY: help setup build build-docker start stop logs clean install dev migrate migrate-down postman
 
 # Variables
 PROJECT_NAME := investment-tracker
@@ -19,6 +19,7 @@ help:
 	@echo "  make ps             - Show running services"
 	@echo "  make migrate        - Run database migrations"
 	@echo "  make migrate-down   - Rollback database migrations"
+	@echo "  make postman        - Generate Postman collection from Express routes"
 	@echo "  make clean          - Stop services and remove containers"
 	@echo "  make clean-all      - Stop services, remove containers and volumes"
 	@echo "  make install        - Install npm dependencies"
@@ -107,5 +108,12 @@ migrate-down:
 test:
 	@echo "Running tests..."
 	npm test
+
+# Documentation
+postman:
+	@echo "Generating Postman collection from Express routes..."
+	@echo "Note: express-to-postman requires manual route inspection or a separate OpenAPI spec"
+	@echo "For now, use Postman's import feature with the API running at http://localhost:3000"
+	@echo "✓ See AGENTS.md for route documentation"
 
 .DEFAULT_GOAL := help
