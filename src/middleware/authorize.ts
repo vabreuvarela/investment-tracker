@@ -6,7 +6,8 @@ import { DomainException } from '../exceptions/DomainException';
  * Compares the userId in the request params with the authenticated userId from the token.
  */
 export function authorizeUserAccess(req: Request, res: Response, next: NextFunction): void {
-  const authenticatedUserId = (req as any).userId;
+  // Support two possible locations for authenticated user id for backward compatibility
+  const authenticatedUserId = (req as any).userId || (req as any).user?.userId;
   const targetUserId = req.params.userId;
 
   if (!authenticatedUserId) {
