@@ -13,10 +13,7 @@ export class InvestmentController {
       const userId = String(req.params.userId);
       const investments = await this.repo.findByUserId(userId);
 
-      res.json({
-        success: true,
-        data: investments,
-      });
+      res.json(investments);
     } catch (error) {
       next(error);
     }

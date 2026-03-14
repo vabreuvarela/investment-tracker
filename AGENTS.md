@@ -14,8 +14,6 @@ Project agent rules (AGENTS.md)
    - When making multiple edits to the same file, batch them in one response using multiple sequential edit calls.
 
 4. Git and commits
-   - Every commit must include this trailer at the end of the commit message exactly:
-     Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>
    - Stage changes explicitly (git add) and use git rm for deletions.
 
 5. Dependencies and builds
@@ -32,6 +30,9 @@ Project agent rules (AGENTS.md)
 8. Communication and style
    - Keep user-facing responses concise (prefer under 100 words). For sub-agent prompts, provide comprehensive context.
    - When needing user input, use the ask_user tool (do not ask clarifying questions in plain text output).
+
+12. API response format
+   - Do not include `success` properties in API JSON responses. Clients must rely exclusively on HTTP status codes to determine success or failure. Return the resource or an error payload as appropriate.
 
 9. Project process rules
    - For multi-file or non-trivial tasks, create a plan.md in the session plan folder before implementing changes.

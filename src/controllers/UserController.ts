@@ -13,10 +13,7 @@ export class UserController {
       const command = new UpdateUserCommand(userId, email, password);
       const result = await this.commandBus.execute(command);
 
-      res.json({
-        success: true,
-        data: result,
-      });
+      res.json(result);
     } catch (error) {
       next(error);
     }
@@ -29,10 +26,7 @@ export class UserController {
       const command = new DeleteUserCommand(userId);
       const result = await this.commandBus.execute(command);
 
-      res.json({
-        success: true,
-        data: result,
-      });
+      res.json(result);
     } catch (error) {
       next(error);
     }

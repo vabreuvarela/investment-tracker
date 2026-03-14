@@ -7,13 +7,12 @@ const router = Router();
 const controller = new InvestmentController();
 
 /**
- * GET /investments/:userId
- * Returns investments for the given user. Requires authentication and authorization (own resources only).
+ * GET /investments
+ * Returns investments for the given user. Requires authentication (own resources only).
  */
 router.get(
-  '/:userId',
+  '/',
   (req: Request, res: Response, next: NextFunction) => authenticate(req, res, next),
-  (req: Request, res: Response, next: NextFunction) => authorizeUserAccess(req, res, next),
   (req: Request, res: Response, next: NextFunction) => controller.list(req, res, next)
 );
 
